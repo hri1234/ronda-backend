@@ -49,7 +49,8 @@ let allowedOrigins = [
   "https://rondadom.onrender.com",
   "https://pos-os-frontend-ok7p7meu9-hritik-4642d12e.vercel.app",
   "https://rondadom.onrender.com",
-  "https://admin-dashboard-react-ed88t4eos-hritik-4642d12e.vercel.app"
+  "https://admin-dashboard-react-ed88t4eos-hritik-4642d12e.vercel.app",
+  "https://ronda-backend.onrender.com"
  
 
 ];
