@@ -39,13 +39,13 @@ let allowedOrigins = [
   "http://localhost:5000",
   "https://pososf.onrender.com",
 "https://pososf.netlify.app",
-<<<<<<< HEAD
+
   "http://localhost:3001",
   "http://localhost:3002"
-=======
+
   "https://pos-os-frontend-9tjx659an-hritik-4642d12e.vercel.app"
  
->>>>>>> c76cafe6741845f58760702c69e569bbeb4fd21f
+
 
 ];
 
