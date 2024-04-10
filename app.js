@@ -41,7 +41,7 @@ let allowedOrigins = [
 "https://pososf.netlify.app",
 
   "http://localhost:3001",
-  "http://localhost:3002"
+  "http://localhost:3002",
 
   "https://pos-os-frontend-9tjx659an-hritik-4642d12e.vercel.app"
  
