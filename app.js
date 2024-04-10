@@ -39,13 +39,18 @@ let allowedOrigins = [
   "http://localhost:5000",
   "https://pososf.onrender.com",
 "https://pososf.netlify.app",
-
   "http://localhost:3001",
+  "https://admin-dashboard-react-5qskiocfe-hritik-4642d12e.vercel.app",
+  "https://pos-os-frontend-dnwvvdkxp-hritik-4642d12e.vercel.app",
   "http://localhost:3002",
-
-  "https://pos-os-frontend-9tjx659an-hritik-4642d12e.vercel.app"
+   "http://localhost:3003",
+  "https://client-f11m42x5s-hritik-4642d12e.vercel.app",
+  "https://mail12.netlify.app",
+  "https://rondadom.onrender.com",
+  "https://pos-os-frontend-ok7p7meu9-hritik-4642d12e.vercel.app",
+  "https://rondadom.onrender.com",
+  "https://admin-dashboard-react-ed88t4eos-hritik-4642d12e.vercel.app"
  
-
 
 ];
 
@@ -55,15 +60,15 @@ let allowedOrigins = [
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
   max: 20, // Limit each IP to 20 requests per `window` (here, per 15 minutes)
-  standardHeaders: true, // Disable rate limit info in the `RateLimit-*` headers
-  legacyHeaders: true, // Disable the `X-RateLimit-*` headers
+  standardHeaders: false, // Disable rate limit info in the `RateLimit-*` headers
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
 /* Middleware */
 // for compressing the response body
 app.use(compression());
 // helmet: secure express app by setting various HTTP headers. And serve cross origin resources.
-// app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
+app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 // morgan: log requests to console in dev environment
 app.use(morgan("dev"));
 // allows cors access from allowedOrigins array
